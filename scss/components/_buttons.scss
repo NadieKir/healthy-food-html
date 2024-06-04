@@ -1,0 +1,59 @@
+.button {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  font-family: $font-primary;
+  border: 0;
+  transition: background-color $transition-base;
+  cursor: pointer;
+
+  &--primary,
+  &--section-read-more {
+    padding: 0.625em 2em;
+    font-size: 1em;
+    font-weight: 500;
+    color: $color-white;
+    background-color: $color-primary-light;
+    border-radius: 1em;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-light-hovered;
+    }
+  }
+
+  &--section-read-more {
+    margin: 2.4em auto 0;
+  }
+
+  &--white {
+    padding: 0.35em 0.7em;
+    font-size: 1em;
+    font-weight: 700;
+    color: $color-primary;
+    background-color: $color-white;
+    border-radius: 0.28em;
+
+    &:hover,
+    &:active {
+      background-color: $color-white-hovered;
+    }
+  }
+
+  &--contact {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    padding: 0.65em 0.7em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 0.625em;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary-hovered;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@mixin adaptive-menu-container() {
+  position: fixed;
+  top: 5.5em;
+  padding: 1em 1.5em;
+  box-shadow: 2px 2px 5px 0px $color-light-gray;
+  border-radius: 1rem;
+  background-color: $color-white;
+  transition: transform $transition-base cubic-bezier(0.2, 1, 0.22, 1);
+  z-index: 2;
+}
+
+@mixin ellipses($line-clamp) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clamp;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Healthy Food Recipes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Food Recipes</title>
+    <link rel="icon" href="/images/icons/favicon.svg" />
+    <link rel="stylesheet" href="/libs/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script defer src="./libs/swiper-bundle.min.js"></script>
+    <script defer src="/js/menu.js"></script>
+    <script defer src="/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="/index.html">
+          <img src="/images/logo.svg" class="header__logo" alt="Food logo" />
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav__links">
+            <li>
+              <a href="#" class="nav-link nav-link--active">
+                <span class="icon-fork-and-knife nav-link__icon"></span>
+                <span class="nav-link__text">Kitchen</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="icon-pizza-slice nav-link__icon"></span>
+                <span class="nav-link__text">Taste</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="icon-cookbook nav-link__icon"></span>
+                <span class="nav-link__text">Recipes</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="icon-pencil nav-link__icon"></span>
+                <span class="nav-link__text">Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">
+                <span class="icon-chat-bubbles nav-link__icon"></span>
+                <span class="nav-link__text">Contacts</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__right">
+          <a href="tel:+88012345678" class="button button--contact">
+            <span class="icon-phone"></span>
+            <span>+88012345678</span>
+          </a>
+          <ul class="header__socials">
+            <li>
+              <a href="#" class="header__social" aria-label="Go to Facebook"
+                ><span class="icon-facebook"></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="header__social" aria-label="Go to Twitter"
+                ><span class="icon-twitter"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Open/close menu">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <article class="first-screen-section">
+        <div class="first-screen-section__container container">
+          <div class="first-screen-section__content">
+            <h1 class="heading heading--h1">Healthy Food Recipes</h1>
+            <p class="first-screen-section__description">
+              Lorem ipsum dolor sit amet, consectetur inquam, illius tabulae, quam
+            </p>
+            <a href="#" class="button button--primary">Read more</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="taste-section section">
+        <div class="container">
+          <h2 class="heading heading--section">Taste of food</h2>
+          <div class="taste-section__cards">
+            <a href="#" aria-label="Go to salad taste page">
+              <article class="food-card">
+                <div class="food-card__image-wrapper">
+                  <img class="food-card__image" src="/images/salad-bg.webp" alt="Salad" />
+                </div>
+                <div class="food-card__texts">
+                  <h3 class="food-card__heading heading heading--subsection">Salad</h3>
+                  <p class="food-card__description">Lorem ipsum dolor sit amet, adipiscing elit. Pudebit</p>
+                </div>
+              </article></a
+            >
+            <a href="#" aria-label="Go to cake taste page">
+              <article class="food-card">
+                <div class="food-card__image-wrapper">
+                  <img class="food-card__image" src="/images/cake-bg.webp" alt="Cake" />
+                </div>
+                <div class="food-card__texts">
+                  <h3 class="food-card__heading heading heading--subsection">Cake</h3>
+                  <p class="food-card__description">Lorem ipsum dolor sit amet, adipiscing elit. Pudebit</p>
+                </div>
+              </article></a
+            >
+            <a href="#" aria-label="Go to burger taste page">
+              <article class="food-card">
+                <div class="food-card__image-wrapper">
+                  <img class="food-card__image" src="/images/burger-bg.webp" alt="Burger" />
+                </div>
+                <div class="food-card__texts">
+                  <h3 class="food-card__heading heading heading--subsection">Burger</h3>
+                  <p class="food-card__description">
+                    Lorem ipsum dolor sit amet, adipiscing elit. Pudebit Lorem ipsum dolor sit amet,
+                    adipiscing elit. Pudebit
+                  </p>
+                </div>
+              </article></a
+            >
+            <a href="#" aria-label="Go to ice cream taste page">
+              <article class="food-card">
+                <div class="food-card__image-wrapper">
+                  <img class="food-card__image" src="/images/icecream-bg.webp" alt="Ice cream" />
+                </div>
+                <div class="food-card__texts">
+                  <h3 class="food-card__heading heading heading--subsection">Ice cream</h3>
+                  <p class="food-card__description">
+                    Lorem ipsum dolor sit amet, adipiscing elit. Pudebit Lorem ipsum dolor sit amet,
+                    adipiscing elit. Pudebit
+                  </p>
+                </div>
+              </article></a
+            >
+            <a href="#" aria-label="Go to pasta taste page">
+              <article class="food-card">
+                <div class="food-card__image-wrapper">
+                  <img class="food-card__image" src="/images/pasta-bg.webp" alt="Pasta" />
+                </div>
+                <div class="food-card__texts">
+                  <h3 class="food-card__heading heading heading--subsection">Pasta</h3>
+                  <p class="food-card__description">Lorem ipsum dolor sit amet, adipiscing elit. Pudebit</p>
+                </div>
+              </article></a
+            >
+            <a href="#" aria-label="Go to cookies taste page">
+              <article class="food-card">
+                <div class="food-card__image-wrapper">
+                  <img class="food-card__image" src="/images/cookies-bg.webp" alt="Cookies" />
+                </div>
+                <div class="food-card__texts">
+                  <h3 class="food-card__heading heading heading--subsection">Cookies</h3>
+                  <p class="food-card__description">Lorem ipsum dolor sit amet, adipiscing elit. Pudebit</p>
+                </div>
+              </article></a
+            >
+          </div>
+          <a href="#" class="button button--section-read-more">Read more</a>
+        </div>
+      </article>
+
+      <article class="recipes-section section section--line-above">
+        <div class="container">
+          <h2 class="heading heading--section">Recipes</h2>
+          <div class="recipes-section__cards">
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-01.webp" alt="Salad" />
+              <a href="#" class="recipe-card__link" aria-label="Read salad recipe">
+                <h3 class="heading heading--recipe-card">Salad</h3>
+              </a>
+            </article>
+
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-02.webp" alt="Buns" />
+              <a href="#" class="recipe-card__link" aria-label="Read buns recipe">
+                <h3 class="heading heading--recipe-card">Buns</h3>
+              </a>
+            </article>
+
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-03.webp" alt="Bread" />
+              <a href="#" class="recipe-card__link" aria-label="Read bread recipe">
+                <h3 class="heading heading--recipe-card">Bread</h3>
+              </a>
+            </article>
+
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-04.webp" alt="Risotto with vegetables" />
+              <a href="#" class="recipe-card__link" aria-label="Read risotto with vegetables recipe">
+                <h3 class="heading heading--recipe-card">Risotto with vegetables</h3>
+              </a>
+            </article>
+
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-05.webp" alt="Crispy chicken legs" />
+              <a href="#" class="recipe-card__link" aria-label="Read crispy chicken legs recipe">
+                <h3 class="heading heading--recipe-card">Crispy chicken legs</h3>
+              </a>
+            </article>
+
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-06.webp" alt="Ramen recipe" />
+              <a href="#" class="recipe-card__link" aria-label="Read ramen recipe">
+                <h3 class="heading heading--recipe-card">Ramen</h3>
+              </a>
+            </article>
+
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-07.webp" alt="Funchosa" />
+              <a href="#" class="recipe-card__link" aria-label="Read funchosa recipe">
+                <h3 class="heading heading--recipe-card">Funchosa</h3>
+              </a>
+            </article>
+
+            <article class="recipe-card">
+              <img class="recipe-card__image" src="/images/recipe-08.webp" alt="Risotto with vegetables" />
+              <a href="#" class="recipe-card__link" aria-label="Read risotto with vegetables recipe">
+                <h3 class="heading heading--recipe-card">Risotto with vegetables</h3>
+              </a>
+            </article>
+          </div>
+          <a href="#" class="button button--section-read-more">Read more</a>
+        </div>
+      </article>
+
+      <article class="blog-section section section--line-above">
+        <div class="container">
+          <h2 class="heading heading--section">Blog</h2>
+          <div class="swiper" id="blogSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="review-card">
+                  <img class="review-card__image" src="/images/cook-01.webp" alt="" />
+                  <div class="review-card__texts">
+                    <h3 class="heading heading--subsection">New healthy recipe</h3>
+                    <p class="review-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pudebit am, illius tabulae,
+                      quam Cleanthes sane commode verbis depingere solebat. Eadem nunc
+                    </p>
+                  </div>
+                  <img class="review-card__quote" src="/images/icons/quote.svg" alt="" />
+                  <img class="review-card__quote" src="/images/icons/quote.svg" alt="" />
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="review-card">
+                  <img class="review-card__image" src="/images/cook-02.webp" alt="" />
+                  <div class="review-card__texts">
+                    <h3 class="heading heading--subsection">Super healthy recipe</h3>
+                    <p class="review-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pudebit am, illius tabulae,
+                      quam Cleanthes sane commode verbis depingere solebat. Eadem nunc Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit. Pudebit am, illius tabulae, quam Cleanthes sane
+                      commode verbis depingere solebat. Eadem nunc
+                    </p>
+                  </div>
+                  <img class="review-card__quote" src="/images/icons/quote.svg" alt="" />
+                  <img class="review-card__quote" src="/images/icons/quote.svg" alt="" />
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                <article class="review-card">
+                  <img class="review-card__image" src="/images/cook-03.webp" alt="" />
+                  <div class="review-card__texts">
+                    <h3 class="heading heading--subsection">Unbelievably healthy recipe</h3>
+                    <p class="review-card__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pudebit am, illius tabulae,
+                      quam Cleanthes sane commode verbis depingere solebat. Eadem nunc Cleanthes sane commode
+                      verbis depingere solebat. Eadem nunc
+                    </p>
+                  </div>
+                  <img class="review-card__quote" src="/images/icons/quote.svg" alt="" />
+                  <img class="review-card__quote" src="/images/icons/quote.svg" alt="" />
+                </article>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <a href="#" class="button button--section-read-more">Read more</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <a href="/index.html">
+          <img src="/images/logo.svg" class="footer__logo" alt="Food logo" />
+        </a>
+
+        <div class="footer__main">
+          <div class="footer__description-follow-us-wrapper">
+            <p class="footer__description">
+              It is a&nbsp;long established fact that a&nbsp;be distracted by&nbsp;the&nbsp;readable when
+              looking at&nbsp;its layout.
+            </p>
+            <article class="follow-us">
+              <h2 class="heading heading--footer">Follow us</h2>
+              <ul class="follow-us__socials">
+                <li>
+                  <a href="#" class="follow-us__social" aria-label="Go to Facebook"
+                    ><span class="icon-facebook"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="follow-us__social" aria-label="Go to Twitter"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="follow-us__social" aria-label="Go to Instagram"
+                    ><span class="icon-instagram"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="follow-us__social" aria-label="Go to Youtube"
+                    ><span class="icon-youtube"></span
+                  ></a>
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <ul class="footer__nav" aria-label="Footer navigation">
+            <li>
+              <a href="/index.html" class="footer__nav-link footer__nav-link--active">Home</a>
+            </li>
+            <li>
+              <a href="#" class="footer__nav-link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__nav-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="footer__nav-link">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="footer__nav-link">Services</a>
+            </li>
+          </ul>
+
+          <div class="footer__newsletter-payment-services-wrapper">
+            <article class="newsletter">
+              <h2 class="heading heading--footer">Subscribe to&nbsp;newsletter</h2>
+              <form class="newsletter__form">
+                <input
+                  class="newsletter__input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  aria-label="Email"
+                  required
+                />
+                <button class="button button--white" type="submit">Subscribe</button>
+              </form>
+            </article>
+            <ul class="footer__payment-services" aria-label="Payment services">
+              <li>
+                <img
+                  src="/images/payment-logos/paypal.webp"
+                  class="footer__payment-service"
+                  alt="Paypal logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="/images/payment-logos/mastercard.webp"
+                  class="footer__payment-service"
+                  alt="Mastercard logo"
+                />
+              </li>
+              <li>
+                <img src="/images/payment-logos/visa.webp" class="footer__payment-service" alt="Visa logo" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

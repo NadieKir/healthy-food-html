@@ -1,0 +1,249 @@
+@import "./common";
+
+.main {
+  font-size: 1em;
+
+  @media (max-width: $breakpoint-xxl) {
+    font-size: 0.8em;
+  }
+
+  @media (max-width: $breakpoint-xl) {
+    font-size: 0.6em;
+  }
+
+  @media (max-width: $breakpoint-m) {
+    font-size: 0.5em;
+  }
+}
+
+/* #region First Screen Section */
+
+.first-screen-section {
+  height: min(calc(100dvh - 4.4em), 770px);
+  background-image: url("../images/first-screen-bg.webp");
+  background-size: cover;
+  background-position: 100% 50%;
+
+  @media (max-width: $breakpoint-m) {
+    background-position: 55% 50%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__content {
+    width: 22em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+  }
+
+  &__description {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* #endregion */
+
+/* #region Taste Section */
+
+.taste-section {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
+    grid-gap: 0.6em;
+  }
+}
+
+.food-card {
+  display: flex;
+  column-gap: 0.7em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  transition: background-color $transition-base, color $transition-base;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &__image-wrapper {
+    max-width: 4.4em;
+    aspect-ratio: 4 / 3;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3em;
+  }
+
+  &__texts {
+    width: fit-content;
+  }
+
+  &__heading {
+    margin-bottom: 0.1em;
+  }
+
+  &__description {
+    @include ellipses(2);
+  }
+}
+
+/* #endregion */
+
+/* #region Recipes Section */
+
+.recipes-section {
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: $breakpoint-xl) {
+      grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+  }
+}
+
+.recipe-card {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: transform $transition-base;
+
+    .recipe-card:hover & {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
+    position: absolute;
+    inset: 0;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba($color-black, 0.25);
+    transform: scale(0);
+    transition: transform $transition-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+
+    .recipe-card:hover & {
+      transform: scale(1);
+    }
+  }
+}
+
+/* #endregion */
+
+/* #region Blog Section */
+
+#blogSwiper {
+  --swiper-navigation-top-offset: calc(50% + var(--swiper-navigation-size) / 2);
+  --swiper-navigation-size: 1.875em;
+  --swiper-navigation-sides-offset: 0;
+  --swiper-theme-color: #ff6624;
+  --swiper-pagination-bullet-size: 0.78em;
+  --swiper-pagination-bullet-horizontal-gap: 0.25em;
+  --swiper-pagination-bottom: calc(100% - 5px - var(--swiper-pagination-bullet-size) / 2);
+
+  .swiper-wrapper {
+    margin-top: calc(var(--swiper-pagination-bullet-size) + 1.875em);
+    margin-bottom: calc($quote-height + $close-quote-top-gap);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: auto;
+
+    &:after {
+      font-family: $font-icons;
+    }
+
+    @media (max-width: $breakpoint-m) {
+      display: none;
+    }
+  }
+
+  .swiper-button-next:after {
+    content: "\e901";
+  }
+
+  .swiper-button-prev:after {
+    content: "\e900";
+  }
+
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    color: $color-gray;
+    opacity: 1;
+  }
+
+  .swiper-pagination {
+    transform: translateY(50%);
+  }
+}
+
+.review-card {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  gap: 1.6em;
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-m) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__image {
+    height: 7.65em;
+    width: 7.65em;
+    border-radius: 50%;
+    border: 0.25em solid $color-primary;
+
+    @media (max-width: $breakpoint-m) {
+      margin: 0 auto;
+      height: 10em;
+      width: 10em;
+    }
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7em;
+  }
+
+  &__quote {
+    position: absolute;
+    top: 0;
+    height: $quote-height;
+    transform: translate(-100%, -100%);
+
+    &:last-of-type {
+      top: calc(100% + $close-quote-top-gap);
+      right: 15%;
+      transform: scale(-1);
+    }
+  }
+}
+
+/* #endregion */

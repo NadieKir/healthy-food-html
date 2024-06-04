@@ -1,0 +1,131 @@
+.footer {
+  padding: 2em 0 3em;
+  font-size: 1.125em;
+  color: $color-white;
+  background-color: $color-primary;
+
+  @media (max-width: $breakpoint-xxl) {
+    font-size: 0.62em;
+  }
+
+  @media (max-width: $breakpoint-m) {
+    font-size: 0.48em;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+  }
+
+  &__logo {
+    position: relative;
+    left: -1.6em;
+    height: 5em;
+
+    @media (max-width: $breakpoint-s) {
+      left: 0;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5em;
+
+    @media (max-width: $breakpoint-l) {
+      max-width: 400px;
+      flex-direction: column;
+      row-gap: 3em;
+    }
+  }
+
+  &__description-follow-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.7em;
+    flex: 1;
+  }
+
+  &__description {
+    font-family: $font-secondary;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+
+    &-link {
+      font-weight: 500;
+      transition: color $transition-base;
+
+      &:hover {
+        color: $color-white-hovered;
+      }
+
+      &--active {
+        font-weight: 700;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__newsletter-payment-services-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.7em;
+    flex: 1;
+  }
+
+  &__payment-services {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+  }
+
+  &__payment-service {
+    height: 1.4em;
+  }
+}
+
+.follow-us {
+  &__socials {
+    display: flex;
+    align-items: center;
+    column-gap: 1.1em;
+    line-height: 0;
+  }
+
+  &__social {
+    font-size: 1.1em;
+    color: $color-white;
+    transition: color $transition-base;
+
+    &:hover {
+      color: $color-white-hovered;
+    }
+  }
+}
+
+.newsletter {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.9em;
+  }
+
+  &__input {
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: $color-white;
+    background-color: transparent;
+    border: 2px solid $color-white;
+    border-radius: 0.25em;
+
+    &::placeholder {
+      font-weight: 200;
+      color: $color-white;
+    }
+  }
+}

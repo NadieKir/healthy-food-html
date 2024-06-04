@@ -1,0 +1,37 @@
+.heading {
+  font-family: $font-primary;
+  line-height: 1.1;
+  text-wrap: balance;
+
+  &--h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: $color-dark-red;
+  }
+
+  &--section {
+    margin-bottom: 1.1em;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+  }
+
+  &--subsection {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  &--recipe-card {
+    font-size: 1.35em;
+    font-weight: 500;
+  }
+
+  &--footer {
+    margin-bottom: 0.85em;
+    font-size: 1.12em;
+    font-weight: 700;
+    line-height: 100%;
+  }
+}

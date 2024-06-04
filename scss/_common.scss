@@ -1,0 +1,72 @@
+@import "../libs/normalize";
+@import "./variables";
+@import "./fonts";
+@import "./colors";
+@import "./icons";
+@import "./mixins";
+
+@import "./components/buttons";
+@import "./components/headings";
+@import "./components/containers";
+
+@import "./components/header";
+@import "./components/footer";
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: $color-black;
+  background-color: $color-white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: contents;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:has(> img) {
+    line-height: 0;
+  }
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}

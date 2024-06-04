@@ -1,0 +1,32 @@
+.container {
+  width: 88%;
+  max-width: 1750px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  &--line-above {
+    position: relative;
+    padding-top: 1.5em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: block;
+      width: 38%;
+      height: 2px;
+      background-color: $color-light-gray;
+      transform: translate(-50%, 50%);
+
+      @media (max-width: $breakpoint-m) {
+        width: 70%;
+      }
+    }
+  }
+}
