@@ -937,24 +937,40 @@ button {
 .taste-section__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr));
-  grid-gap: 0.6em;
+  grid-gap: 1.2em;
 }
 
 .food-card {
+  position: relative;
   display: flex;
   -moz-column-gap: 0.7em;
        column-gap: 0.7em;
-  padding: 0.5em;
   border-radius: 0.5em;
-  transition: background-color 0.3s, color 0.3s;
+  transition: color 0.3s;
+}
+.food-card::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1.2em);
+  height: calc(100% + 1.2em);
+  background-color: #ff6624;
+  border-radius: 0.5em;
+  opacity: 0;
+  transform: translate(-0.6em, -0.6em);
+  transition: opacity 0.3s;
+  z-index: -1;
 }
 .food-card:hover {
-  background-color: #ff6624;
   color: #fff;
+}
+.food-card:hover::after {
+  opacity: 1;
 }
 .food-card__image-wrapper {
   max-width: 4.4em;
-  aspect-ratio: 4/3;
+  height: -moz-fit-content;
+  height: fit-content;
+  aspect-ratio: 7/6;
 }
 .food-card__image {
   width: 100%;
@@ -968,15 +984,11 @@ button {
   width: fit-content;
 }
 .food-card__heading {
-  margin-bottom: 0.1em;
+  margin-bottom: 0.2em;
+  line-height: 90%;
 }
 .food-card__description {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: normal;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  font-size: 0.95em;
 }
 
 /* #endregion */
