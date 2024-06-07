@@ -531,8 +531,12 @@ template {
 }
 
 .header {
-  padding: 1.3em 0;
+  position: sticky;
+  top: 0;
+  padding: 1.2em 0;
   font-size: 1em;
+  background-color: #fff;
+  z-index: 2;
 }
 @media (max-width: 1690px) {
   .header {
@@ -579,7 +583,7 @@ template {
 @media (max-width: 560px) {
   .header__socials {
     position: fixed;
-    top: 5.5em;
+    top: 6em;
     padding: 1em 1.5em;
     box-shadow: 2px 2px 5px 0px #d9d9d9;
     border-radius: 1rem;
@@ -612,7 +616,7 @@ template {
 @media (max-width: 1330px) {
   .nav {
     position: fixed;
-    top: 5.5em;
+    top: 6em;
     padding: 1em 1.5em;
     box-shadow: 2px 2px 5px 0px #d9d9d9;
     border-radius: 1rem;

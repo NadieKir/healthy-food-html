@@ -1,6 +1,10 @@
 .header {
-  padding: 1.3em 0;
+  position: sticky;
+  top: 0;
+  padding: 1.2em 0;
   font-size: 1em;
+  background-color: $color-white;
+  z-index: 2;
 
   @media (max-width: $breakpoint-xxl) {
     font-size: 0.75em;
